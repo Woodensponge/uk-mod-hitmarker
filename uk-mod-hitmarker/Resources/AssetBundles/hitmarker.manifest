@@ -1,0 +1,18 @@
+ManifestFileVersion: 0
+CRC: 1486180927
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 8d822afd7269e161a42782ea8138006a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 27295f96fcdc2b917bd061e8817c7e02
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+Assets:
+- Assets/Hitmarker/MyBalls.prefab
+Dependencies: []
