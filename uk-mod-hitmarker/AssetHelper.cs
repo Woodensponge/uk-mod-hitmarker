@@ -23,12 +23,14 @@ namespace HitmarkerMod
                 Debug.LogError("Hitmarker: Cannot load default AssetBundle embedded in the dll.");
             }
 
-            embeddedAssetBundle = AssetBundle.LoadFromStream(stream);
-            if (embeddedAssetBundle == null)
+            var assetBundle = AssetBundle.LoadFromStream(stream);
+            if (assetBundle == null)
             {
                 Debug.LogError("Hitmarker: Obtained Embedded AssetBundle file, but could not create it. Probably already loaded.");
+                return null;
             }
 
+            embeddedAssetBundle = assetBundle;
             return embeddedAssetBundle;
         }
     }
