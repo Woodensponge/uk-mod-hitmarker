@@ -14,10 +14,15 @@ namespace HitmarkerMod
         {
             Debug.Log("Hitmarker: Loading Embedded AssetBundle");
 
-            var assembly = Assembly.GetExecutingAssembly();
-            var resourceName = "HitmarkerMod.Resources.AssetBundles.hitmarker";
+            if (embeddedAssetBundle != null)
+            {
+                Debug.LogError("Hitmarker: Tried loading the embedded AssetBundle already loaded.");
+                return null;
+            }
 
-            Stream stream = assembly.GetManifestResourceStream(resourceName);
+            var assembly = Assembly.GetExecutingAssembly();
+
+            Stream stream = assembly.GetManifestResourceStream("HitmarkerMod.Resources.AssetBundles.hitmarker");
             if (stream == null)
             {
                 Debug.LogError("Hitmarker: Cannot load default AssetBundle embedded in the dll.");
@@ -26,7 +31,7 @@ namespace HitmarkerMod
             var assetBundle = AssetBundle.LoadFromStream(stream);
             if (assetBundle == null)
             {
-                Debug.LogError("Hitmarker: Obtained Embedded AssetBundle file, but could not create it. Probably already loaded.");
+                Debug.LogError("Hitmarker: Obtained embedded AssetBundle file, but could not create it. I have no idea why.");
                 return null;
             }
 
