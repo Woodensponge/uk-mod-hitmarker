@@ -7,14 +7,22 @@ namespace HitmarkerMod
     [UKPlugin("Hitmarker Mod", "1.0.0", "Adds a customizeable hitmarker to the game. Hitmarkers are both optionally auditory and visual.", true, true)]
     public class HitmarkerMod : UKMod
     {
-        static GameObject hitmarker;
+        GameObject hitmarker;
 
         public override void OnModLoaded()
         {
             //TODO: Move to another file later
             On.NewMovement.Start += NewMovement_Start;
 
-            AssetHelper.LoadEmbeddedAssetBundle();
+            if (AssetHelper.EmbeddedAssetBundle == null)
+            {
+                AssetHelper.LoadEmbeddedAssetBundle();
+            }
+        }
+
+        public override void OnModUnload()
+        {
+            Destroy(hitmarker);
         }
 
         private void NewMovement_Start(On.NewMovement.orig_Start orig, NewMovement self)
