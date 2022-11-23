@@ -24,7 +24,7 @@ namespace HitmarkerMod
 
         private static void EnemyIdentifier_DeliverDamage(On.EnemyIdentifier.orig_DeliverDamage orig, EnemyIdentifier self, GameObject target, Vector3 force, Vector3 hitPoint, float multiplier, bool tryForExplode, float critMultiplier, GameObject sourceWeapon)
         {
-            if (self.dead)
+            if (self.dead || self.blessed)
             {
                 orig(self, target, force, hitPoint, multiplier, tryForExplode, critMultiplier, sourceWeapon);
                 return;
@@ -42,6 +42,7 @@ namespace HitmarkerMod
                     case "heavypunch":
                     case "ground slam":
                     case "projectile":      //Enemy projectile. Parried.
+                    case "ffexplosion":     //Kamakaze drone
                         Hitmarker.Instance.GenericAnimation();
                         break;
                 }
@@ -60,7 +61,8 @@ namespace HitmarkerMod
             //TODO: Add hit types later.
             switch (self.hitter)
             {
-                case "shotgun":             //Shotgun pellet and hitscan
+                case "shotgun":             //Shotgun pellet
+                case "shotgunzone":         //Shotgun hitscan
                 case "revolver":
                 case "railcannon":
                 case "sawblade":

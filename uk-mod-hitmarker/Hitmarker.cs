@@ -32,7 +32,7 @@ namespace HitmarkerMod
             Color color = image.color;
             color.a = 1f;
             image.color = color;
-            elapsedTime = 0.2f;
+            elapsedTime = 0.3f;
         }
 
         public void Update()
@@ -40,6 +40,9 @@ namespace HitmarkerMod
             if (elapsedTime > 0)
             {
                 elapsedTime -= Time.deltaTime;
+                Color color = image.color;
+                color.a = elapsedTime / 0.3f;
+                image.color = color;
                 return;
             }
             if (elapsedTime <= 0)
