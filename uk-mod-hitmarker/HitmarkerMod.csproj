@@ -330,7 +330,7 @@
   <ItemGroup>
     <Compile Include="AssetHelper.cs" />
     <Compile Include="CrosshairPatch.cs" />
-    <Compile Include="GunPatch.cs" />
+    <Compile Include="DeliverDamagePatch.cs" />
     <Compile Include="Hitmarker.cs" />
     <Compile Include="HitmarkerMod.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

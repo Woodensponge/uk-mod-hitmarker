@@ -13,13 +13,13 @@ namespace HitmarkerMod
                 AssetHelper.LoadEmbeddedAssetBundle();
             }
 
-            GunPatch.ApplyHooks();
+            DeliverDamagePatch.ApplyHooks();
             CrosshairPatch.ApplyHooks();
         }
 
         public override void OnModUnload()
         {
-            GunPatch.RemoveHooks();
+            DeliverDamagePatch.RemoveHooks();
             CrosshairPatch.RemoveHooks();
         }
     }
