@@ -16,7 +16,7 @@ namespace HitmarkerMod
             switch (pointID)
             {
                 case "ultrakill.chargeback":
-                    Hitmarker.Instance.GenericAnimation();
+                    Hitmarker.Instance.OnEnemyDamage(10, 1);
                     break;
             }
             orig(self, points, pointID, sourceWeapon, eid, count, prefix, postfix);
@@ -43,8 +43,8 @@ namespace HitmarkerMod
                     case "ground slam":
                     case "projectile":      //Enemy projectile. Parried.
                     case "ffexplosion":     //Kamakaze drone
-                        Hitmarker.Instance.GenericAnimation();
-                        break;
+                        Hitmarker.Instance.OnEnemyDamage(multiplier, critMultiplier);
+                    break;
                 }
                 orig(self, target, force, hitPoint, multiplier, tryForExplode, critMultiplier, sourceWeapon);
                 return;
@@ -68,12 +68,12 @@ namespace HitmarkerMod
                 case "sawblade":
                 case "nail":
                 case "coin":                //Fistful of dollar
-                    Hitmarker.Instance.GenericAnimation();
+                    Hitmarker.Instance.OnEnemyDamage(multiplier, critMultiplier);
                     break;
                 case "explosion":
                     if (multiplier != 0f)
                     {
-                        Hitmarker.Instance.GenericAnimation();
+                        Hitmarker.Instance.OnEnemyDamage(multiplier, critMultiplier);
                     }
                     break;
             }

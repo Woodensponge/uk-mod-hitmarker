@@ -19,10 +19,10 @@ namespace HitmarkerMod
 
             if (hitmarker == null)
             {
-                hitmarker = Object.Instantiate(assetBundle.LoadAsset<GameObject>("HitmarkerPlaceholder")).AddComponent<Hitmarker>();
+                hitmarker = Object.Instantiate(assetBundle.LoadAsset<GameObject>("DynamicHitmarker"), self.transform.parent).AddComponent<Hitmarker>();
+                hitmarker.SetAnimationMode(Hitmarker.AnimationMode.Dynamic);
             }
 
-            hitmarker.transform.SetParent(self.transform.parent);
             hitmarker.transform.localPosition = Vector3.zero;
         }
 

@@ -7,14 +7,20 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HitmarkerMod", "uk-mod-hitm
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
+		BepinexDebug|Any CPU = BepinexDebug|Any CPU
+		BepinexRelease|Any CPU = BepinexRelease|Any CPU
+		UKModDebug|Any CPU = UKModDebug|Any CPU
+		UKModRelease|Any CPU = UKModRelease|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E678289B-4CBF-4644-876A-EF35F38741D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E678289B-4CBF-4644-876A-EF35F38741D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E678289B-4CBF-4644-876A-EF35F38741D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E678289B-4CBF-4644-876A-EF35F38741D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E678289B-4CBF-4644-876A-EF35F38741D8}.BepinexDebug|Any CPU.ActiveCfg = BepinexDebug|Any CPU
+		{E678289B-4CBF-4644-876A-EF35F38741D8}.BepinexDebug|Any CPU.Build.0 = BepinexDebug|Any CPU
+		{E678289B-4CBF-4644-876A-EF35F38741D8}.BepinexRelease|Any CPU.ActiveCfg = BepinexRelease|Any CPU
+		{E678289B-4CBF-4644-876A-EF35F38741D8}.BepinexRelease|Any CPU.Build.0 = BepinexRelease|Any CPU
+		{E678289B-4CBF-4644-876A-EF35F38741D8}.UKModDebug|Any CPU.ActiveCfg = UKModDebug|Any CPU
+		{E678289B-4CBF-4644-876A-EF35F38741D8}.UKModDebug|Any CPU.Build.0 = UKModDebug|Any CPU
+		{E678289B-4CBF-4644-876A-EF35F38741D8}.UKModRelease|Any CPU.ActiveCfg = UKModRelease|Any CPU
+		{E678289B-4CBF-4644-876A-EF35F38741D8}.UKModRelease|Any CPU.Build.0 = UKModRelease|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

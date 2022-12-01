@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1223985991
+CRC: 668917051
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 48e5eb87127075e160d3423d05f7f6bb
+    Hash: ecc94baf0c770f2b13a750472a0800b4
   TypeTreeHash:
     serializedVersion: 2
     Hash: f98c7bdb74dd487f54cac0f4547117d5
@@ -24,6 +24,8 @@ ClassTypes:
 - Class: 224
   Script: {instanceID: 0}
 Assets:
+- Assets/Hitmarker/DynamicHitmarkerStroke.png
+- Assets/Hitmarker/DynamicHitmarker.prefab
 - Assets/Hitmarker/HitmarkerImage.png
 - Assets/Hitmarker/MyBalls.prefab
 - Assets/Hitmarker/HitmarkerPlaceholder.prefab
