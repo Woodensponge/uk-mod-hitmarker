@@ -5,7 +5,7 @@ using BepInEx;
 namespace HitmarkerMod
 {
 #if UKMOD
-    [UKPlugin("Hitmarker Mod", "1.0.0", "Adds a customizeable hitmarker to the game. Hitmarkers are both optionally auditory and visual.", true, true)]
+    [UKPlugin("Hitmarker Mod", "1.0.0", "Adds a customizeable hitmarker to the game. Options are coming Soon(tm)", true, true)]
     public class HitmarkerMod : UKMod
     {
         public override void OnModLoaded()
@@ -31,7 +31,7 @@ namespace HitmarkerMod
     [BepInProcess("ULTRAKILL.exe")]
     public class HitmarkerMod : BaseUnityPlugin
     {
-        public void Awake()
+        public void Start()
         {
             if (AssetHelper.EmbeddedAssetBundle == null)
             {
@@ -42,11 +42,13 @@ namespace HitmarkerMod
             CrosshairPatch.ApplyHooks();
         }
 
+        /*
         public void OnDestroy()
         {
             DeliverDamagePatch.RemoveHooks();
             CrosshairPatch.RemoveHooks();
         }
+        */
     }
 
 #endif

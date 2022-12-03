@@ -16,7 +16,7 @@ namespace HitmarkerMod
             switch (pointID)
             {
                 case "ultrakill.chargeback":
-                    Hitmarker.Instance.OnEnemyDamage(10, 1);
+                    Hitmarker.Instance.OnEnemyDamage(10);
                     break;
             }
             orig(self, points, pointID, sourceWeapon, eid, count, prefix, postfix);
@@ -43,14 +43,16 @@ namespace HitmarkerMod
                     case "ground slam":
                     case "projectile":      //Enemy projectile. Parried.
                     case "ffexplosion":     //Kamakaze drone
-                        Hitmarker.Instance.OnEnemyDamage(multiplier, critMultiplier);
+                        Hitmarker.Instance.OnEnemyDamage(multiplier);
                     break;
                 }
                 orig(self, target, force, hitPoint, multiplier, tryForExplode, critMultiplier, sourceWeapon);
                 return;
             }
 
+#if DEBUG
             Debug.Log("source weapon isn't null");
+#endif
             if (!(sourceWeapon.transform.parent != null && sourceWeapon.transform.parent.tag == "GunControl"))
             {
                 //Damage wasn't dealt by the player.
@@ -68,12 +70,12 @@ namespace HitmarkerMod
                 case "sawblade":
                 case "nail":
                 case "coin":                //Fistful of dollar
-                    Hitmarker.Instance.OnEnemyDamage(multiplier, critMultiplier);
+                    Hitmarker.Instance.OnEnemyDamage(multiplier);
                     break;
                 case "explosion":
                     if (multiplier != 0f)
                     {
-                        Hitmarker.Instance.OnEnemyDamage(multiplier, critMultiplier);
+                        Hitmarker.Instance.OnEnemyDamage(multiplier);
                     }
                     break;
             }

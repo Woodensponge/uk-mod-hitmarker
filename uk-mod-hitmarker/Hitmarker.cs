@@ -128,12 +128,14 @@ namespace HitmarkerMod
             }
         }
 
-        public void OnEnemyDamage(float damageMultiplier, float critMultiplier)
+        public void OnEnemyDamage(float damageMultiplier)
         {
-            ApplyColor(1f);
-            Debug.Log($"Damage Multiplier: {damageMultiplier}");
+            ApplyColor(1f, 1f, 1f, 1f);
             sizeFromDamage += damageMultiplier * sizeFromDamageMultiplier;
+#if DEBUG
+            Debug.Log($"Damage Multiplier: {damageMultiplier}");
             Debug.Log($"Size from damage: {dynamicMinHeight - (1 * sizeFromDamageMultiplier) + sizeFromDamage}");
+#endif
             ModifyStrokeTransforms(dynamicCurrentWidth, dynamicMinHeight - (1 * sizeFromDamageMultiplier) + sizeFromDamage, dynamicCurrentOffset);
 
             elapsedTime = 0.3f;
