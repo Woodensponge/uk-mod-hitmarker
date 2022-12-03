@@ -1,0 +1,8 @@
+D:\GitProjects\uk-mod-hitmarker\uk-mod-hitmarker\bin\BepinexDebug\HitmarkerMod.dll
+D:\GitProjects\uk-mod-hitmarker\uk-mod-hitmarker\bin\BepinexDebug\HitmarkerMod.pdb
+D:\GitProjects\uk-mod-hitmarker\uk-mod-hitmarker\bin\BepinexDebug\MMHOOK_Assembly-CSharp.dll
+D:\GitProjects\uk-mod-hitmarker\uk-mod-hitmarker\obj\BepinexDebug\HitmarkerMod.csproj.AssemblyReference.cache
+D:\GitProjects\uk-mod-hitmarker\uk-mod-hitmarker\obj\BepinexDebug\HitmarkerMod.csproj.CoreCompileInputs.cache
+D:\GitProjects\uk-mod-hitmarker\uk-mod-hitmarker\obj\BepinexDebug\HitmarkerMod.csproj.CopyComplete
+D:\GitProjects\uk-mod-hitmarker\uk-mod-hitmarker\obj\BepinexDebug\HitmarkerMod.dll
+D:\GitProjects\uk-mod-hitmarker\uk-mod-hitmarker\obj\BepinexDebug\HitmarkerMod.pdb

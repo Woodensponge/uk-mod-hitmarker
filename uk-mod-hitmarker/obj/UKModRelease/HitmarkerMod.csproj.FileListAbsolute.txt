@@ -1,0 +1,8 @@
+D:\GitProjects\uk-mod-hitmarker\uk-mod-hitmarker\bin\UKModRelease\HitmarkerMod.dll
+D:\GitProjects\uk-mod-hitmarker\uk-mod-hitmarker\bin\UKModRelease\HitmarkerMod.pdb
+D:\GitProjects\uk-mod-hitmarker\uk-mod-hitmarker\bin\UKModRelease\MMHOOK_Assembly-CSharp.dll
+D:\GitProjects\uk-mod-hitmarker\uk-mod-hitmarker\obj\UKModRelease\HitmarkerMod.csproj.AssemblyReference.cache
+D:\GitProjects\uk-mod-hitmarker\uk-mod-hitmarker\obj\UKModRelease\HitmarkerMod.csproj.CoreCompileInputs.cache
+D:\GitProjects\uk-mod-hitmarker\uk-mod-hitmarker\obj\UKModRelease\HitmarkerMod.csproj.CopyComplete
+D:\GitProjects\uk-mod-hitmarker\uk-mod-hitmarker\obj\UKModRelease\HitmarkerMod.dll
+D:\GitProjects\uk-mod-hitmarker\uk-mod-hitmarker\obj\UKModRelease\HitmarkerMod.pdb
